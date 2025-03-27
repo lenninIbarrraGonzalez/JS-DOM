@@ -8,7 +8,7 @@
     <title>Ejercicios DOM</title>
 </head>
 <body>
-    <header class="flex-row-center">
+    <header class="header flex-row-center">
         <h1>Ejercios del DOM</h1>
     </header>
     <button class="hamburger hamburger--collapse is-active" type="button">
@@ -16,30 +16,33 @@
         <span class="hamburger-inner"></span>
         </span>
     </button>
-    <menu class="menu inactive">
-        <a href="#">Sección Uno</a>
-        <a href="#">Sección Dos</a>
-        <a href="#">Sección Tres</a>
-        <a href="#">Sección Cuatro</a>
-        <a href="#">Sección Cinco</a>
-    </menu>
+    
+    <nav class="nav inactive">
+        <a href="#section1">Sección Uno</a>
+        <a href="#section2">Sección Dos</a>
+        <a href="#section3">Sección Tres</a>
+        <a href="#section4">Sección Cuatro</a>
+        <a href="#section5">Sección Cinco</a>
+    </nav>
+    
+    
     <main>
-        <section class="container-section flex-row-center">
+        <section id="section1" class="container-section flex-row-center">
             <h3>Sección Uno</h3>
         </section>
-        <section class="container-section flex-row-center">
+        <section id="section2" class="container-section flex-row-center">
             <h3>Sección Dos</h3>
         </section>
-        <section class="container-section flex-row-center">
+        <section id="section3" class="container-section flex-row-center">
             <h3>Sección Tres</h3>
         </section>
-        <section class="container-section flex-row-center">
+        <section id="section4" class="container-section flex-row-center">
             <h3>Sección Cuatro</h3>
         </section>
-        <section class="container-section flex-row-center">
+        <section id="section5" class="container-section flex-row-center">
             <h3>Sección Cinco</h3>
         </section>
     </main>
-    <script src="./js/menu.js" type="module"></script>
+    <script src="index.js" type="module"></script>
 </body>
 </html>

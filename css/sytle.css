@@ -37,10 +37,14 @@ video {
     display: flex;
     justify-content: center;
     align-items: center;
-}   
+}  
 
 header {
+    position: sticky;
+    top: 0;
+    padding: 1rem;
     background-color: var(--main-color);
+    color: var(--second-color);
     
 }
 
@@ -54,7 +58,7 @@ header {
     border-radius: 50%;
 }
 
-.menu {
+.nav {
     position: fixed;
     display: flex;
     flex-direction: column;
@@ -67,7 +71,7 @@ header {
     opacity: 0;
 }
 
-.menu.active {
+.nav.active {
     animation: fadeIn 1s ease-out forwards;
 }
 
@@ -82,7 +86,7 @@ header {
     }
 }
 
-.menu.inactive {
+.nav.inactive {
     animation: fadeOut 1s ease-out forwards;
 }
 
@@ -97,19 +101,18 @@ header {
     }
 }
 
-.menu a {
+.nav a {
     display: flex;
+    width: 100%;
     align-items: center;
+    justify-content: center;
     height: 50px;
     box-sizing: border-box;
     text-decoration: none;
     color: var(--main-color);
-    width: 100%;
-    justify-content: center;
-    
 }
 
-.menu a:hover{
+.nav a:hover{
     background-color: var(--main-color);
     color: var(--second-color);
 }
