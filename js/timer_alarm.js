@@ -54,8 +54,7 @@ export function alarm (sound, btnPlay, btnStop) {
     let alarmTempo;
     const $alarm = document.createElement("audio");
     $alarm.src=sound;
-    console.log($alarm);
-
+    
     document.addEventListener("click", (e) => {
         if(e.target.matches(btnPlay)) {
             if(alarmTempo) return
