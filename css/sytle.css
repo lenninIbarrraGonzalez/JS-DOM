@@ -76,7 +76,7 @@ header {
     animation: fadeIn 1s ease-out forwards;
 }
 
-@keyframes fadeIn {
+@keyframes fadeout {
     0% {
         opacity: 1;
         
@@ -91,7 +91,7 @@ header {
     animation: fadeOut 1s ease-out forwards;
 }
 
-@keyframes fadeOut {
+@keyframes fadeIn {
     0% {
         opacity: 0;
         transform: translate(-100%);
