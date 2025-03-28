@@ -69,6 +69,7 @@ header {
     margin: 0;
     background-color: var(--second-modal-color);
     opacity: 0;
+    z-index: 9998;
 }
 
 .nav.active {
@@ -126,6 +127,27 @@ header {
 .clock {
     display: flex;
     justify-content: center;
+}
+
+.panel {
+    width: 100vw;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+    background-color: beige;
+    padding: 10px;
+}
+
+.circle {
+    width: 20px;
+    height: 20px;
+    background-color: var(--main-color);
+    border-radius: 50%;
+    position: absolute;
+    left: 0; /* Posición inicial */
+    right: 0;
+    top: 20px;
+    transition: left 0.1s linear;
 }
 
 
