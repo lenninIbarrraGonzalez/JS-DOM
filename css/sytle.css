@@ -58,6 +58,22 @@ header {
     border-radius: 50%;
 }
 
+.btn-up {
+    position: fixed;
+    right: 80px;
+    bottom: 20px;
+    z-index: 9999;
+    background-color: var(--main-color);
+    border-radius: 50%;
+    border: none;
+    padding: 17px 19px;
+    cursor: pointer;
+}
+
+.btn-up.btn-inactive {
+    display: none;
+}
+
 .nav {
     position: fixed;
     display: flex;
