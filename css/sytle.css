@@ -7,6 +7,9 @@
     --main-modal-color: rgba(247, 222, 30, 0.85);
     --second-modal-color: rgba(34, 34, 34, 0.85);
     --container-width: 1200px;
+    --background-dark: #000;
+    --second-colo-dark: #fff;
+
 }
 
 html {
@@ -25,6 +28,11 @@ html {
 body {
     margin: 0;
     overflow-x: hidden;
+}
+
+.dark-mode {
+    background-color: var(--background-dark);
+    color: var(--second-colo-dark);
 }
 
 img,
@@ -72,6 +80,22 @@ header {
 
 .btn-up.btn-inactive {
     display: none;
+}
+
+.btn-theme {
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+    z-index: 9999;
+    background-color: var(--main-color);
+    border-radius: 50%;
+    border: none;
+    padding: 15px 0px;
+    cursor: pointer;
+}
+
+.btn-theme img {
+    width: 30%;
 }
 
 .nav {

@@ -13,7 +13,7 @@ export default function scroll_up(btnup) {
         }
     });
 
-    document.addEventListener("click", () => {
+    $btn_up.addEventListener("click", () => {
         window.scrollTo({
             top: 0,
             behavior: "smooth" // para que suba suavemente
